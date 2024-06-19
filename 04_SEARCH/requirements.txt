@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+tensorflow  
+numpy
+pandas
+pillow
+opencv-python
+matplotlib
+patool
+rarfile
+python-dotenv
+scipy

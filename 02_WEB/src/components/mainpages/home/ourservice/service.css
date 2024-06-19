@@ -1,0 +1,84 @@
+.services {
+  width: 100%;
+  max-width: 960px; /* Đảm bảo chiều rộng tối đa là 960px */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  ); /* Điều chỉnh kích thước minmax để phù hợp với 4 services */
+  justify-items: center;
+  margin: 20px auto; /* Điều chỉnh margin để căn giữa */
+  padding: 0 0px; /* Giảm padding để phù hợp với chiều rộng tổng thể */
+}
+
+/* ----------- Product Item ----------------- */
+@import url("../../utils/productItem/productItem.css");
+
+.delete-all {
+  text-align: right;
+  margin: 20px;
+  padding: 0px 144px;
+}
+.delete-all input {
+  height: 25px;
+  width: 25px;
+  transform: translateY(5px);
+  margin: 0 15px;
+}
+.delete-all .check-button {
+  text-transform: uppercase;
+  color: rgb(3, 165, 206);
+  letter-spacing: 1.3px;
+  border: 1px solid rgb(3, 165, 206);
+  padding: 2px 20px;
+  border-radius: 10px;
+  color: rgb(3, 165, 206);
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.delete-all .delete-button {
+  border: 1px solid crimson;
+  padding: 2px 20px;
+  border-radius: 10px;
+  color: crimson;
+  text-transform: uppercase;
+}
+
+/* ------------ Filters Menu ----------------- */
+.filter_menu {
+  background-color: var(--primary-background);
+  width: 100%;
+  min-height: 82px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 180px;
+  /* margin: 15px 0; */
+}
+
+/* -------------------- Load More --------------- */
+.load_more {
+  text-align: center;
+}
+.load_more button {
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  text-transform: capitalize;
+}
+.service-main {
+  width: 100%;
+}
+.service-main .service-p {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+}

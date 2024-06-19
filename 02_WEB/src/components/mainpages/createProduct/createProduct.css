@@ -1,0 +1,227 @@
+.create_product {
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  /* Phần tử con được sắp xếp từ trên xuống dưới */
+  justify-content: center;
+  /* Căn các phần tử vào giữa theo chiều ngang */
+  margin: 0px auto;
+  background-color: rgb(244, 244, 244);
+  padding: 12px 12px;
+}
+
+.upload {
+  max-width: 33.3%;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  background-color: #fff;
+}
+
+#file_up {
+  width: 100%;
+  outline: none;
+  padding-bottom: 320px;
+}
+
+#file_up::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  border: 2px dotted #6b5a41;
+  top: 0;
+  left: 0;
+  background-color: white;
+  background-image: url("../../asset/img/upload_img/camera.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  color: transparent;
+}
+
+#file_img {
+  width: 50%;
+  height: 150px; /* Giới hạn chiều cao để cuộn */
+  background: white;
+  margin-top: 20px; /* Tạo khoảng cách với thẻ input */
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  align-items: center; /* Căn giữa các hình ảnh theo chiều ngang */
+}
+
+#file_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.upload .file_img > div {
+  width: 48%; /* Each image takes up 48% of the container width */
+  margin-bottom: 20px; /* Adjust as needed */
+}
+#file_img span {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 900;
+  color: crimson;
+}
+
+.file-img-load {
+  position: relative;
+  width: 90%; /* Đảm bảo hình ảnh nằm trọn trong div#file_img */
+  text-align: center;
+  border: 1px solid #ccc; /* Để nhìn rõ ràng hơn */
+}
+
+.file-img-load img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #ccc;
+}
+
+.file-img-load span {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 900;
+  color: crimson;
+}
+
+.no-line {
+  line-height: 0;
+}
+
+.create_product form {
+  max-width: 66.6%;
+  min-width: 290px;
+  width: 100%;
+  margin: 15px 30px;
+}
+
+.create_product form .row {
+  width: 100%;
+  margin: 15px;
+}
+
+.create_product form input,
+textarea {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 5px;
+  margin-top: 10px;
+}
+
+.create_product form > button {
+  width: 200px;
+  height: 40px;
+  background: #07055b;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.row-type {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 20px;
+}
+.row > label {
+  margin-bottom: 10px;
+}
+.row-type > div {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.btn-type > svg {
+  color: aqua !important;
+}
+
+.no-line {
+  line-height: 0;
+}
+
+.category {
+  margin-top: 7px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../../../asset/img/upload_img/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 4%;
+  background-position: right 10px center;
+  padding-right: 20px;
+}
+.row-type div input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.add-type-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-type-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.add-type-button:hover {
+  background-color: #45a049;
+}
+
+.types-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.types-table th,
+.types-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.types-table th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.custom-add-type {
+}

@@ -1,0 +1,35 @@
+// src/App.scss
+$primary-color: #007bff;
+
+.App {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .App-header {
+        background-color: $primary-color;
+        padding: 20px;
+        color: white;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .list-group-item {
+        background-color: $primary-color;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+        width: 500px;
+    }
+
+    .btn-outline-secondary {
+        color: #fff;
+        border-color: #ddd;
+    }
+}

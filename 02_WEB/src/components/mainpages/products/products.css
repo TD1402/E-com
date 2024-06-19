@@ -1,0 +1,235 @@
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  margin: 20px 0;
+  padding: 0px 0px;
+  position: relative;
+}
+
+/* ----------- Product Item ----------------- */
+@import url("../utils/productItem/productItem.css");
+
+.delete-all {
+  text-align: right;
+  margin: 20px;
+  padding: 0px 144px;
+}
+.delete-all input {
+  height: 25px;
+  width: 25px;
+  transform: translateY(5px);
+  margin: 0 15px;
+}
+.delete-all .check-button {
+  text-transform: uppercase;
+  color: rgb(3, 165, 206);
+  letter-spacing: 1.3px;
+  border: 1px solid rgb(3, 165, 206);
+  padding: 2px 20px;
+  border-radius: 10px;
+  color: rgb(3, 165, 206);
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.delete-all button {
+  border: 1px solid crimson;
+  padding: 2px 20px;
+  border-radius: 10px;
+  color: crimson;
+  text-transform: uppercase;
+}
+
+/* ------------ Filters Menu ----------------- */
+.filter_menu {
+  background-color: var(--primary-background);
+  width: 100%;
+  min-height: 82px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 180px;
+  /* margin: 15px 0; */
+}
+.filter_menu select,
+input {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  width: 200px;
+  height: 46.54px;
+  padding: 0 23px;
+  /* margin: 10px 25px 10px 21px; */
+}
+
+.filter_menu .search-input {
+  flex: 1;
+  margin: 0 170px;
+  margin-right: 20px;
+}
+
+.filter_menu .row select,
+.filter_menu .row .search-input,
+.filter_menu .row .camera-icon,
+.filter_menu .row.sort select {
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+}
+
+.filter_menu .row {
+  display: flex;
+  flex-wrap: wrap; /* Ensures that items wrap within the row if they overflow */
+}
+
+.filter_menu .row select,
+.filter_menu .row .search-input,
+.filter_menu .row .camera-icon,
+.filter_menu .row.sort select {
+  margin: 5px;
+}
+
+/* -------------------- Load More --------------- */
+.load_more {
+  text-align: center;
+}
+.load_more button {
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  text-transform: capitalize;
+}
+.camera-icon {
+  cursor: pointer;
+  margin-right: 100px;
+}
+
+.filter_menu {
+  position: relative;
+}
+
+.modal-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* CSS cho nội dung của modal */
+.modal-content-product {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS cho nút close */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-upload {
+  height: 350px;
+  width: 100%;
+  border: 2px dotted #6b5a41;
+  position: relative;
+  margin-top: 20px;
+}
+
+#modal-fileup {
+  width: 100%;
+  outline: none;
+}
+
+#modal-fileup::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  background-image: url("../../asset/img/upload_img/camera.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  color: transparent;
+}
+
+#modal_file_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+}
+
+#modal_file_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.modal-button {
+  width: 200px;
+  height: 40px;
+  background: #07055b;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+#modal_file_img span {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 900;
+  color: crimson;
+}
+.close-button {
+  position: absolute; /* Đặt vị trí tuyệt đối cho nút "X" */
+  top: -15px; /* Đặt vị trí ở đỉnh của phần tử cha */
+  right: 0; /* Đặt vị trí bên phải của phần tử cha */
+  background-color: red; /* Màu nền của nút */
+  color: white; /* Màu chữ */
+  border: none; /* Xóa viền */
+  padding: 5px 10px; /* Kích thước nút */
+  cursor: pointer; /* Đổi hình con trỏ khi di chuột qua nút */
+}

@@ -1,0 +1,111 @@
+.dashboard .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar {
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+.dashboard-sidebar {
+}
+.dashboard .sidebar {
+  height: 100vh;
+  padding-top: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.dashboard .sidebar .nav-link {
+  color: #333;
+}
+
+.dashboard .sidebar .nav-link.active {
+  font-weight: bold;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.pagination {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.pagination .page-item .page-link {
+  cursor: pointer;
+}
+.action-buttons button {
+  margin-right: 8px; /* Thêm margin-right 5px cho các nút */
+}
+.row .mb-3 {
+  margin-top: 10px;
+}
+.checkbox-dashboard {
+}
+.small-checkbox {
+  width: 32px; /* Adjust the size as needed */
+  height: 32px; /* Adjust the size as needed */
+  transform: scale(0.75); /* Scale the checkbox */
+  -webkit-transform: scale(0.75); /* For Safari */
+  -moz-transform: scale(0.75); /* For Firefox */
+  -ms-transform: scale(0.75); /* For Internet Explorer */
+  -o-transform: scale(0.75); /* For Opera */
+  margin: 0; /* Remove any unwanted margin */
+  padding: 0; /* Remove any unwanted padding */
+  display: flex;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  align-items: center; /* Align items vertically */
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 9px; /* Spacing between items */
+  margin-right: 6px;
+}
+.action-checkbox {
+  width: 30px; /* Adjust width as needed */
+}
+.action-buttons {
+  width: 250px;
+}
+.checkbox-all {
+  margin-left: 14px;
+}
+
+.left-buttons {
+  display: flex;
+  gap: 9px; /* Khoảng cách giữa các nút bên trái */
+}
+
+.right-buttons {
+  display: flex;
+  gap: 9px; /* Khoảng cách giữa các nút bên phải */
+  margin-left: auto; /* Căn phải */
+}
+
+.btn-page {
+  border-color: #5a8dee;
+  background-color: #690437;
+  color: #fff;
+}

@@ -1,0 +1,10 @@
+.home-container {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column; /* Phần tử con được sắp xếp từ trên xuống dưới */
+    justify-content: center; /* Căn các phần tử vào giữa theo chiều ngang */
+    align-items: center; /* Căn các phần tử vào giữa theo chiều dọc */
+    margin: 0px auto;
+    background-color: rgb(244, 244, 244);
+    padding: 12px 12px;
+}
